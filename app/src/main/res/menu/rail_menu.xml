@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/toysFragment"
+        android:icon="@drawable/ic_baseline_bedroom_baby_24"
+        android:title="@string/toys" />
+
+    <item
+        android:id="@+id/ambientFragment"
+        android:icon="@drawable/ic_baseline_blur_on_24"
+        android:title="@string/ambient" />
+
+    <item
+        android:id="@+id/gameFragment"
+        android:icon="@drawable/ic_baseline_tag_faces_24"
+        android:title="@string/game" />
+
+    <item
+        android:id="@+id/sleepFragment"
+        android:icon="@drawable/ic_baseline_bedtime_24"
+        android:title="@string/sleep" />
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ambient.AmbientFragmentPlay">
+
+        <ImageView
+            android:id="@+id/ivBackgroundAmbient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:ignore="ImageContrastCheck, ContentDescription"
+            tools:src="@drawable/background_overlay_forest" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/ambientPlayContainerView"
+            android:name="de.doctormoreno.appsolute.ui.components.ToyCardsPlay"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout="@layout/fragment_toy_cards" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

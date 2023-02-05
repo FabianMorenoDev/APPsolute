@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="de.doctormoreno.appsolute.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ambientFragment"
+        android:name="de.doctormoreno.appsolute.ui.ambient.AmbientFragment"
+        android:label="AmbientFragment"
+        tools:layout="@layout/fragment_ambient">
+        <action
+            android:id="@+id/action_ambientFragment_to_ambientFragmentHear"
+            app:destination="@id/ambientFragmentHear" />
+    </fragment>
+    <fragment
+        android:id="@+id/ambientFragmentHear"
+        android:name="de.doctormoreno.appsolute.ui.ambient.AmbientFragmentHear"
+        android:label="AmbientFragmentHear"
+        tools:layout="@layout/fragment_ambient_hear">
+        <action
+            android:id="@+id/action_ambientFragmentHear_to_ambientFragmentPlay"
+            app:destination="@id/ambientFragmentPlay"
+            app:popUpTo="@id/ambientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ambientFragmentPlay"
+        android:name="de.doctormoreno.appsolute.ui.ambient.AmbientFragmentPlay"
+        android:label="AmbientFragmentPlay"
+        tools:layout="@layout/fragment_ambient_play">
+        <action
+            android:id="@+id/action_ambientFragmentPlay_to_ambientFragmentHear"
+            app:destination="@id/ambientFragmentHear"
+            app:popUpTo="@id/ambientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="de.doctormoreno.appsolute.ui.game.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_gameFragmentFirst"
+            app:destination="@id/gameFragmentFirst" />
+    </fragment>
+    <fragment
+        android:id="@+id/sleepFragment"
+        android:name="de.doctormoreno.appsolute.ui.sleep.SleepFragment"
+        android:label="SleepFragment"
+        tools:layout="@layout/fragment_sleep" />
+    <fragment
+        android:id="@+id/toysFragment"
+        android:name="de.doctormoreno.appsolute.ui.toys.ToysFragment"
+        android:label="ToysFragment"
+        tools:layout="@layout/fragment_toys" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="de.doctormoreno.appsolute.ui.home.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="de.doctormoreno.appsolute.ui.home.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/gameFragmentFirst"
+        android:name="de.doctormoreno.appsolute.ui.game.GameFragmentFirst"
+        android:label="GameFragmentFirst">
+        <action
+            android:id="@+id/action_gameFragmentFirst_to_gameFragmentSecond"
+            app:destination="@id/gameFragmentSecond" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragmentSecond"
+        android:name="de.doctormoreno.appsolute.ui.game.GameFragmentSecond"
+        android:label="GameFragmentSecond">
+        <action
+            android:id="@+id/action_gameFragmentSecond_to_gameFragmentThird"
+            app:destination="@id/gameFragmentThird" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragmentThird"
+        android:name="de.doctormoreno.appsolute.ui.game.GameFragmentThird"
+        android:label="GameFragmentThird">
+        <action
+            android:id="@+id/action_gameFragmentThird_to_gameFragmentResult"
+            app:destination="@id/gameFragmentResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragmentResult"
+        android:name="de.doctormoreno.appsolute.ui.game.GameFragmentResult"
+        android:label="GameFragmentResult" />
+</navigation>

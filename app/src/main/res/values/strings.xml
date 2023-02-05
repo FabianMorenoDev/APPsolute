@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">APPsolute</string>
+    <string name="home">Home</string>
+    <string name="toys">Toys</string>
+    <string name="ambient">Ambient</string>
+    <string name="game">Game</string>
+    <string name="sleep">Sleep</string>
+    <string name="play_key_c">Play Key C</string>
+    <string name="play_key_d">Play Key D</string>
+    <string name="play_key_e">Play Key E</string>
+    <string name="play_key_f">Play Key F</string>
+    <string name="play_key_g">Play Key G</string>
+    <string name="play_key_a">Play Key A</string>
+    <string name="play_key_b">Play Key B</string>
+    <string name="play_key_c_sharp">Play Key C#</string>
+    <string name="play_key_d_sharp">Play Key D#</string>
+    <string name="play_key_f_sharp">Play Key F#</string>
+    <string name="play_key_g_sharp">Play Key G#</string>
+    <string name="play_key_a_sharp">Play Key A#</string>
+    <string name="fab_filter">Mozart ear filter</string>
+    <string name="fab_play">Playing Mode</string>
+    <string name="fab_hear">Hearing Mode</string>
+    <string name="mozart">Mozart</string>
+    <string name="instrument_0">Piano</string>
+    <string name="instrument_1">Guitar</string>
+    <string name="instrument_2">Strings</string>
+    <string name="instrument_3">Brass</string>
+    <string name="ambient_0">Forest</string>
+    <string name="ambient_1">City</string>
+    <string name="ambient_2">Night</string>
+    <string name="ambient_3">Ocean</string>
+    <string name="ambient_4">River</string>
+    <string name="ambient_5">Bees</string>
+    <string name="about_button">About</string>
+    <string name="settings_button">Settings</string>
+    <string name="mozart_filter">Mozart Filter</string>
+    <string name="lower_octave">Lower Octave</string>
+    <string name="higher_octave">Higher Octave</string>
+    <string name="confirm_close_app">Press again to close the app</string>
+    <string name="note_playback_failed">Couldn\'t play note</string>
+    <string name="keyboard_muted_during_animation">Keyboard muted during animation</string>
+    <string name="play_the_game">Play the Game</string>
+    <string name="about_sample">
+Appsolute has a filter that recreates Mozart\'s way of hearing. According to drawings from the time, Mozart had a deformed pinna on his left ear. This deformation is clinically called Mozart\'s ear*.
+\n\nWe made a silicone model of the ear and recreated Mozart\'s hearing in an amplified form. To do this, the changes in the sound wave produced by the deformed pinna were analysed in comparison with a normal pinna, also made of silicone. The effect of the filter can be heard in the left ear. In the settings of the application, the filter can be switched to the right ear or placed in both ears.
+\n\nAbsolute pitch (AP), i.e. the perception to distinguish sounds without reference is very subtle. We compare it to the \"taste\" of musical notes. In is like a second \"taste\", a \"phantom taste\" of each sound. To perceive the taste we do not have to make any effort. We have called this taste GHOSTO. It is a mixture of the English ghost and the Spanish gusto (organ of the senses that distinguishes taste). The AP consists of perceiving this GHOSTO.
+\n\nAppsolute has 5 parts:
+\n\n1. HOME - Here you choose the instrument that will be played throughout the application.
+\n\n2. TOYS - According to the descriptions of 35 people with AP of how musical notes sound, we have chosen an animal, an object and a direction in space for each of them. Regarding the colour associated with musical notes, there is disagreement among composers. We don\'t know, for example, if they associated the colour orange with the D, whether they were referring to the note or to the chord. In the application, the colours have been taken from the rainbow. In the settings you can change the colour of the notes.
+\n\n3. AMBIENT - Here the sound of different environments are chosen to relax the listener (sound of bees, sea, river, rain, forest, etc.). The notes are then listened to in a figure-ground context. The "grounds" are the sound oft he environments that seek relaxation, the \"figure\" is the musical note that emerges or is hidden in the background. This part has a passive mode where we only choose the environment and an active mode where we can also choose the note.
+\n\n4. GAME - AP learning is based on the emotions evoked by sound stimuli that transport us to the preverbal stage of development: infant laughter, children playing, etc. It is at this stage that AP is anchored. The application avoids statistics, explanations, charts, intervals and music theory, which have to do with the way the left hemisphere of the brain perceives. The aim is to ensure that those who play with Appsolute enjoy it, avoiding \"thinking\" about the notes. We measure the effectiveness of the application based on the speed of the answers. Only correct answers are counted. In the exercises, the musical notes are heard as syllables of a monosyllabic tonal language and as sound contours of an atonal language. To avoid confusion due to automatic transposition on keyboards and to help with the sequential placement of the notes on stringed instruments, we have placed the \"pictures\" of the musical notes one after the other in GAME.
+\n\n5. SLEEP - Each note of the musical scale will sound in different ways. In about one hour you will hear the 12 sounds of the tempered scale. This part of the application can be heard while meditating or before going to sleep. One of the interviewees told us that he spent 3 hours a day for 3 months to acquire AP. The application is designed for those who do not have time and a learning method. In both GAME and SLEEP, in addition to the musical instrument chosen in HOME, frequent sounds from the city and the countryside are heard. By default, the notes are listened to in reverse, in order to better capture the harmonics, which are the accompanying sounds of the main sound and key to the acquisition of the AP. This effect can be reversed in the settings.
+\n\n* Mozart\'s ear is characterized by a bulging appearance of the anterosuperior portion of the auricle, a convexly protruded cavum conchae, and a slit-like narrowing of the orifice of the externalauditory meatus
+    </string>
+    <string name="next">next</string>
+    <string name="correct">CORRECT 🤩</string>
+    <string name="try_again">TRY AGAIN..</string>
+    <string name="game_first_description">In this Level, </string>
+    <string name="game_second_description">In this Level, </string>
+    <string name="game_third_description">In this Level, </string>
+    <string name="ok">OK</string>
+</resources>

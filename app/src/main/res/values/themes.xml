@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Appsolute" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_brand_color_500</item>
+        <item name="colorPrimaryVariant">@color/primary_brand_color_50</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_brand_color_500</item>
+        <item name="colorSecondaryVariant">@color/secondary_brand_color_50</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Tertiary brand color. -->
+        <item name="colorTertiary">@color/tertiary_brand_color_500</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

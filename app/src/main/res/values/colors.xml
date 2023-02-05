@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="grey_50">#f9f9f9</color>
+    <color name="grey_100">#f4f4f4</color>
+    <color name="grey_200">#ececec</color>
+    <color name="grey_300">#dddddd</color>
+    <color name="grey_400">#b9b9b9</color>
+    <color name="grey_500">#9a9a9a</color>
+    <color name="grey_600">#717171</color>
+    <color name="grey_700">#5d5d5d</color>
+    <color name="grey_800">#3f3f3f</color>
+    <color name="grey_900">#1e1e1e</color>
+    <color name="grey_1000">#191919</color>
+
+    <color name="black">#FF000000</color>
+
+    <color name="primary_brand_color_50">#d8faff</color>
+    <color name="primary_brand_color_100">#98f3fe</color>
+    <color name="primary_brand_color_200">#0eebff</color>
+    <color name="primary_brand_color_300">#00e0fd</color>
+    <color name="primary_brand_color_400">#00d7f8</color>
+    <color name="primary_brand_color_500">#00cef5</color>
+    <color name="primary_brand_color_600">#00bde0</color>
+    <color name="primary_brand_color_700">#00a8c4</color>
+    <color name="primary_brand_color_800">#0093aa</color>
+    <color name="primary_brand_color_900">#006f79</color>
+    <color name="primary_brand_color_1000">#004950</color>
+
+    <color name="secondary_brand_color_50">#fdf8e1</color>
+    <color name="secondary_brand_color_100">#fbecb3</color>
+    <color name="secondary_brand_color_200">#f9df81</color>
+    <color name="secondary_brand_color_300">#f7d44e</color>
+    <color name="secondary_brand_color_400">#f6c926</color>
+    <color name="secondary_brand_color_500">#f5c000</color>
+    <color name="secondary_brand_color_600">#f5b200</color>
+    <color name="secondary_brand_color_700">#f6a000</color>
+    <color name="secondary_brand_color_800">#f68f00</color>
+    <color name="secondary_brand_color_900">#f67000</color>
+    <color name="secondary_brand_color_1000">#ed5300</color>
+
+    <color name="tertiary_brand_color_50">#fee4ed</color>
+    <color name="tertiary_brand_color_100">#fcbbd2</color>
+    <color name="tertiary_brand_color_200">#fa8fb4</color>
+    <color name="tertiary_brand_color_300">#f96096</color>
+    <color name="tertiary_brand_color_400">#f6397e</color>
+    <color name="tertiary_brand_color_500">#f50066</color>
+    <color name="tertiary_brand_color_600">#e40063</color>
+    <color name="tertiary_brand_color_700">#cd005f</color>
+    <color name="tertiary_brand_color_800">#b8005b</color>
+    <color name="tertiary_brand_color_900">#940054</color>
+    <color name="tertiary_brand_color_1000">#770143</color>
+
+    <color name="toy_c">#D50000</color>
+    <color name="toy_c_sharp">#FF0F7F</color>
+    <color name="toy_d">#F35C16</color>
+    <color name="toy_d_sharp">#FF8C00</color>
+    <color name="toy_e">#FFD600</color>
+    <color name="toy_f">#00B132</color>
+    <color name="toy_f_sharp">#68FB0A</color>
+    <color name="toy_g">#0091EA</color>
+    <color name="toy_g_sharp">#304FFE</color>
+    <color name="toy_a">#6200EA</color>
+    <color name="toy_a_sharp">#B35503</color>
+    <color name="toy_b">#8A8A8A</color>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+    </data>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.components.ToyCardsFragment">
+
+        <ImageView
+            android:id="@+id/ivToyCard0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/play_key_c"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_c_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/play_key_c_sharp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_c_sharp_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/play_key_d"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_d_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/play_key_d_sharp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_d_sharp_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/play_key_e"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_e_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="5"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/play_key_f"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_f_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/play_key_f_sharp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_f_sharp_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/play_key_g"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_g_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/play_key_g_sharp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_g_sharp_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/play_key_a"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_a_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="4"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/play_key_a_sharp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_a_sharp_combined" />
+
+        <ImageView
+            android:id="@+id/ivToyCard11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="5"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/play_key_b"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/note_b_combined" />
+
+    </GridLayout>
+</layout>

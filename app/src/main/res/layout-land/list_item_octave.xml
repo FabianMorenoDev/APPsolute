@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- White Keys -->
+
+        <ImageButton
+            android:id="@+id/keyC"
+            style="@style/keyStyle.white"
+            android:contentDescription="@string/play_key_c"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/keyD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyD"
+            style="@style/keyStyle.white"
+            android:contentDescription="@string/play_key_d"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/keyE"
+            app:layout_constraintStart_toEndOf="@+id/keyC"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyE"
+            style="@style/keyStyle.white"
+            android:contentDescription="@string/play_key_e"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/keyF"
+            app:layout_constraintStart_toEndOf="@+id/keyD"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyF"
+            style="@style/keyStyle.white"
+            android:contentDescription="@string/play_key_f"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/keyG"
+            app:layout_constraintStart_toEndOf="@+id/keyE"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyG"
+            style="@style/keyStyle.white"
+            android:contentDescription="@string/play_key_g"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/keyA"
+            app:layout_constraintStart_toEndOf="@+id/keyF"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyA"
+            style="@style/keyStyle.white"
+            android:contentDescription="@string/play_key_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/keyB"
+            app:layout_constraintStart_toEndOf="@+id/keyG"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyB"
+            style="@style/keyStyle.white"
+            android:contentDescription="@string/play_key_b"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/keyA"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Black Keys -->
+
+        <ImageButton
+            android:id="@+id/keyCsharp"
+            style="@style/keyStyle.black"
+            android:contentDescription="@string/play_key_c_sharp"
+            app:layout_constraintBottom_toTopOf="@+id/glBlackHorizontal0"
+            app:layout_constraintEnd_toStartOf="@+id/glBlackVertical1"
+            app:layout_constraintStart_toStartOf="@+id/glBlackVertical0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyDsharp"
+            style="@style/keyStyle.black"
+            android:contentDescription="@string/play_key_d_sharp"
+            app:layout_constraintBottom_toTopOf="@+id/glBlackHorizontal0"
+            app:layout_constraintEnd_toStartOf="@+id/glBlackVertical3"
+            app:layout_constraintStart_toStartOf="@+id/glBlackVertical2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyFsharp"
+            style="@style/keyStyle.black"
+            android:contentDescription="@string/play_key_f_sharp"
+            app:layout_constraintBottom_toTopOf="@+id/glBlackHorizontal0"
+            app:layout_constraintEnd_toStartOf="@+id/glBlackVertical5"
+            app:layout_constraintStart_toStartOf="@+id/glBlackVertical4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyGsharp"
+            style="@style/keyStyle.black"
+            android:contentDescription="@string/play_key_g_sharp"
+            app:layout_constraintBottom_toTopOf="@+id/glBlackHorizontal0"
+            app:layout_constraintEnd_toStartOf="@+id/glBlackVertical7"
+            app:layout_constraintStart_toStartOf="@+id/glBlackVertical6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keyAsharp"
+            style="@style/keyStyle.black"
+            android:contentDescription="@string/play_key_a_sharp"
+            app:layout_constraintBottom_toTopOf="@+id/glBlackHorizontal0"
+            app:layout_constraintEnd_toStartOf="@+id/glBlackVertical9"
+            app:layout_constraintStart_toStartOf="@+id/glBlackVertical8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Guidelines -->
+
+        <!-- horizontal -->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackHorizontal0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <!-- vertical -->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0952" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1904" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2380" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3333" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5238" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6190" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6666" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7619" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8095" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBlackVertical9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9047" />
+
+        <ImageButton
+            android:id="@+id/ibLowerOctave"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6dp"
+            android:alpha="0.5"
+            android:background="@drawable/gradient_gray_left"
+            android:contentDescription="@string/lower_octave"
+            android:minWidth="32dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/glBlackHorizontal0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_chevron_left_24"
+            app:tint="@color/black" />
+
+        <ImageButton
+            android:id="@+id/ibHigherOctave"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6dp"
+            android:alpha="0.5"
+            android:background="@drawable/gradient_gray_right"
+            android:contentDescription="@string/higher_octave"
+            android:minWidth="32dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/glBlackHorizontal0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_chevron_right_24"
+            app:tint="@color/black" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
