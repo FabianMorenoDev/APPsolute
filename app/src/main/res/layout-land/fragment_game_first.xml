@@ -42,6 +42,7 @@
             app:iconTint="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <Button
             android:id="@+id/btn2"
             style="@style/Widget.MaterialComponents.FloatingActionButton"
@@ -93,38 +94,6 @@
             app:layout_constraintBottom_toBottomOf="@id/btnNext"
             tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/tvCorrect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/correct"
-            android:textColor="#5EFF24"
-            android:textSize="60sp"
-            android:textStyle="bold"
-            android:visibility="gone"
-            app:layout_constraintBottom_toTopOf="@id/gameContainerView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
-
-        <TextView
-            android:id="@+id/tvTryAgain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/try_again"
-            android:textColor="#FF2424"
-            android:textSize="60sp"
-            android:textStyle="bold"
-            android:visibility="gone"
-            app:layout_constraintBottom_toTopOf="@id/gameContainerView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
-
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/gameContainerView"
             android:name="de.doctormoreno.appsolute.ui.components.ToyCardsGame"
@@ -171,6 +140,39 @@
                 />
         </com.google.android.material.card.MaterialCardView>
 
+        <TextView
+            android:id="@+id/tvCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/correct"
+            android:textColor="#5EFF24"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:background="#80000000"
+            app:layout_constraintBottom_toTopOf="@id/gameContainerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tvTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/try_again"
+            android:textColor="#FF2424"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:background="#80000000"
+            app:layout_constraintBottom_toTopOf="@id/gameContainerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

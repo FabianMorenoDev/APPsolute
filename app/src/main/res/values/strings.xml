@@ -55,8 +55,10 @@ Appsolute has a filter that recreates Mozart\'s way of hearing. According to dra
     <string name="next">next</string>
     <string name="correct">CORRECT 🤩</string>
     <string name="try_again">TRY AGAIN..</string>
-    <string name="game_first_description">In this Level, </string>
-    <string name="game_second_description">In this Level, </string>
-    <string name="game_third_description">In this Level, </string>
+    <string name="game_first_description">In this level, you can choose between 2, 3 or 4 notes being played in a certain order. You then have to select one of the animal corresponding to the notes you heard.</string>
+    <string name="game_second_description">In this level, a few bass notes are played before a chord is played. You then have to select the animal corresponding to the one bass note that was part of the chord. Choose between 2 or 3 bass note options.</string>
+    <string name="game_third_description">In this level, you will listen to a melody. You then have to select the animal corresponding to the note that was played last / first. Choose between the first and last note</string>
     <string name="ok">OK</string>
+    <string name="first">First</string>
+    <string name="last">Last</string>
 </resources>

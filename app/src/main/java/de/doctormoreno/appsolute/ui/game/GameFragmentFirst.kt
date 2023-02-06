@@ -10,6 +10,8 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import coil.load
+import de.doctormoreno.appsolute.ALPHA_NOT_SELECTED
+import de.doctormoreno.appsolute.ALPHA_SELECTED
 import de.doctormoreno.appsolute.MainViewModel
 import de.doctormoreno.appsolute.audio.GAME_ONE_PATTERNS
 import de.doctormoreno.appsolute.data.models.Note
@@ -24,6 +26,8 @@ class GameFragmentFirst : Fragment() {
     private lateinit var binding: FragmentGameFirstBinding
     private val mainViewModel: MainViewModel by activityViewModels()
     private val gameViewModel: GameViewModel by activityViewModels()
+
+    private var mode = 2
 
     private lateinit var context: Context
 
@@ -43,26 +47,11 @@ class GameFragmentFirst : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initializeView()
-        binding.btnNext.setOnClickListener {
-            findNavController().navigate(GameFragmentFirstDirections.actionGameFragmentFirstToGameFragmentSecond())
-        }
+        setOnClickListeners()
         gameViewModel.pause()
         gameViewModel.next.observe(viewLifecycleOwner) {
             if (it) {
                 startPattern()
-            }
-        }
-        binding.btnOk.setOnClickListener {
-            binding.cvDescrpition.visibility = View.GONE
-            gameViewModel.resume()
-            gameViewModel.stats.observe(viewLifecycleOwner) {
-                if (it.isNotEmpty()) {
-                    if (it.last()) {
-                        binding.tvCorrect.visibility = View.VISIBLE
-                    } else {
-                        binding.tvTryAgain.visibility = View.VISIBLE
-                    }
-                }
             }
         }
     }
@@ -92,8 +81,48 @@ class GameFragmentFirst : Fragment() {
         }
     }
 
+    private fun setOnClickListeners(){
+        binding.btnNext.setOnClickListener {
+            findNavController().navigate(GameFragmentFirstDirections.actionGameFragmentFirstToGameFragmentSecond())
+        }
+        binding.btnOk.setOnClickListener {
+            binding.cvDescrpition.visibility = View.GONE
+            gameViewModel.resume()
+            gameViewModel.stats.observe(viewLifecycleOwner) {
+                if (it.isNotEmpty()) {
+                    if (it.last()) {
+                        binding.tvCorrect.visibility = View.VISIBLE
+                    } else {
+                        binding.tvTryAgain.visibility = View.VISIBLE
+                    }
+                }
+            }
+        }
+        binding.btn2.setOnClickListener {
+            binding.btn2.alpha = ALPHA_SELECTED
+            binding.btn3.alpha = ALPHA_NOT_SELECTED
+            binding.btn4.alpha = ALPHA_NOT_SELECTED
+            mode = 2
+        }
+        binding.btn3.setOnClickListener {
+            binding.btn3.alpha = ALPHA_SELECTED
+            binding.btn2.alpha = ALPHA_NOT_SELECTED
+            binding.btn4.alpha = ALPHA_NOT_SELECTED
+            mode = 3
+        }
+        binding.btn4.setOnClickListener {
+            binding.btn4.alpha = ALPHA_SELECTED
+            binding.btn2.alpha = ALPHA_NOT_SELECTED
+            binding.btn3.alpha = ALPHA_NOT_SELECTED
+            mode = 4
+        }
+    }
+
     private fun initializeView() {
         binding.ivBackgroundGame.load(R.drawable.background_overlay_game)
+        binding.btn2.alpha = ALPHA_SELECTED
+        binding.btn3.alpha = ALPHA_NOT_SELECTED
+        binding.btn4.alpha = ALPHA_NOT_SELECTED
         binding.tvTryAgain.visibility = View.GONE
         binding.tvCorrect.visibility = View.GONE
     }

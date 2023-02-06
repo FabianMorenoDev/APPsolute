@@ -9,6 +9,7 @@ import androidx.fragment.app.activityViewModels
 import coil.load
 import de.doctormoreno.appsolute.R
 import de.doctormoreno.appsolute.databinding.FragmentGameResultBinding
+import kotlin.math.round
 
 class GameFragmentResult : Fragment() {
 
@@ -42,7 +43,7 @@ class GameFragmentResult : Fragment() {
             if (correct == 0) {
                 "0"
             } else {
-                100.0 / (gameViewModel.stats.value?.size ?: 1) * correct
+                round(100* 100.0 / (gameViewModel.stats.value?.size ?: 1) * correct)/100
             }
         }%"
         binding.tvScore.text = result

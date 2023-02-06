@@ -43,37 +43,37 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tvCorrect"
+        <Button
+            android:id="@+id/btnFirst"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/correct"
-            android:textColor="#5EFF24"
-            android:textSize="60sp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/autour_one"
+            android:text="@string/first"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:visibility="gone"
-            app:layout_constraintBottom_toTopOf="@id/gameContainerView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
+            app:backgroundTint="@color/tertiary_brand_color_500"
+            app:layout_constraintStart_toEndOf="@id/btnNext"
+            app:layout_constraintTop_toTopOf="@id/btnNext"
+            app:layout_constraintBottom_toBottomOf="@id/btnNext" />
 
-        <TextView
-            android:id="@+id/tvTryAgain"
+        <Button
+            android:id="@+id/btnLast"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/try_again"
-            android:textColor="#FF2424"
-            android:textSize="60sp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/autour_one"
+            android:text="@string/last"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:visibility="gone"
-            app:layout_constraintBottom_toTopOf="@id/gameContainerView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
+            app:backgroundTint="@color/tertiary_brand_color_500"
+            app:layout_constraintStart_toEndOf="@id/btnFirst"
+            app:layout_constraintTop_toTopOf="@id/btnNext"
+            app:layout_constraintBottom_toBottomOf="@id/btnNext" />
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/gameContainerView"
@@ -120,6 +120,40 @@
                 android:layout_gravity="bottom|end"
                 />
         </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/correct"
+            android:textColor="#5EFF24"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:background="#80000000"
+            app:layout_constraintBottom_toTopOf="@id/gameContainerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/tvTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/try_again"
+            android:textColor="#FF2424"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:background="#80000000"
+            app:layout_constraintBottom_toTopOf="@id/gameContainerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
