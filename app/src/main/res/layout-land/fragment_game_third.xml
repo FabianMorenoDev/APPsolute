@@ -103,7 +103,7 @@
                 android:layout_gravity="top|center"
                 android:textAlignment="center"
                 android:text="@string/game_third_description"
-                android:textSize="24sp"
+                android:textSize="14sp"
                 />
             <Button
                 android:id="@+id/btnOk"
